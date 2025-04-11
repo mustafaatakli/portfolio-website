@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Ataklı | Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+    <!-- Animasyonlu Arka Plan -->
+    <div class="background">
+        <div class="grid"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="logo" style="cursor: pointer;" onclick="scrollToTop()">MUSTAFA ATAKLI</div>
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="#home" data-section="home">👤 Hakkımda</a></li>
+                    <li><a href="#projects" data-section="projects">💼 Projeler</a></li>
+                    <li><a href="#skills" data-section="skills">💻 Yetenekler</a></li>
+                    <li><a href="#contact" data-section="contact">📞 İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="theme-lang-controls">
+                <button id="themeToggle" class="control-btn" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button id="langToggle" class="control-btn" aria-label="Toggle language">
+                    <span class="lang-text">TR</span>
+                </button>
+            </div>
+            <div class="scroll-progress"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Terminal Bölümü -->
+        <section id="home" class="terminal-section">
+            <div class="container">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <div class="dot dot-red"></div>
+                            <div class="dot dot-yellow"></div>
+                            <div class="dot dot-green"></div>
+                        </div>
+                        <div class="terminal-title">terminal@user: ~/portfolio</div>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="user-profile">
+                            <div class="user-info">
+                                <div class="user-text">
+                                    <div class="command-line">
+                                        <span class="prompt">visitor@terminal:~$</span>
+                                        <span class="command">\----*welcome*----\</span>
+                                    </div>
+                                    <div class="response">
+                                        <h1 class="user-name">Mustafa Ataklı</h1>
+                                        <p class="user-bio">Muğla Sıtkı Koçman Üniversitesi Bilişim Sistemleri Mühendisliği 3. sınıf öğrencisiyim ve yazılım alanında kendimi aktif olarak geliştirmeye devam ediyorum. Yapay zeka, makine öğrenmesi ve görüntü işleme alanlarına özel ilgi duyuyor, bu alanlarda projeler geliştirerek yetkinliklerimi artırıyorum. Python programlama dili ve yapay zeka kütüphanelerinde (TensorFlow, Scikit-Learn, OpenCV gibi) yetkinim ve C# diline hakimim. Öğrenmeye açık, azimli ve disiplinli bir yapıya sahibim. Amacım, yenilikçi teknolojilerle problem çözme becerilerimi geliştirerek sektörde değer katan projelerde yer almaktır.</p>
+                                        <div class="profile-actions">
+                                            <a href="#contact" class="action-btn contact-btn">
+                                                <i class="fas fa-envelope"></i>
+                                                <span class="btn-text">İletişime Geç</span>
+                                            </a>
+                                            <a href="cv/MustafaAtakli_CV.pdf" class="action-btn download-btn" id="downloadCV">
+                                                <i class="fas fa-download"></i>
+                                                <span class="btn-text">CV İndir</span>
+                                            </a>
+                                            <div id="download-success" class="download-success" style="display: none;">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>CV başarıyla indirildi!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="terminal-prompt">
+                                        <span class="prompt">visitor@terminal:~$</span>
+                                        <span class="command">_</span>
+                                        <span class="cursor"></span>
+                                    </div>
+                                </div>
+                                <div class="user-image">
+                                    <img src="images/profile.jpg" alt="Mustafa Ataklı">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projeler Bölümü -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <h2 class="section-title">Projelerim</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/aygaz-project.jpg" alt="Aygaz Görüntü İşleme Projesi">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Aygaz Görüntü İşleme Projesi</h3>
+                            <p class="project-desc">Yapay zeka ve görüntü işleme teknolojileri kullanılarak geliştirilen, Aygaz tüplerinin görsel analizini yapan bitirme projesi.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli/Aygaz_Goruntu_Isleme_Bitirme_Projesi" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/deprem-project.jpg" alt="Deprem Mobil Projesi">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Deprem Mobil Python Projesi</h3>
+                            <p class="project-desc">Python ile geliştirilmiş, gerçek zamanlı deprem verilerini takip eden ve kullanıcılara bildirim sağlayan mobil uygulama.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli/Deprem_Mobil_Python_Projesi" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/isletme-project.jpg" alt="İşletme Yönetim Sistemi">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">İşletme Yönetim Sistemi</h3>
+                            <p class="project-desc">İşletmelerin yönetim süreçlerini dijitalleştiren ve optimize eden kapsamlı bir yönetim sistemi.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C#</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli/IsletmeYonetimSistemi" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/optik-project.jpg" alt="Optik Akış ve Hareket Takibi">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Optik Akış ve Hareket Takibi</h3>
+                            <p class="project-desc">Görüntü işleme teknolojileri kullanılarak geliştirilen, nesne hareketlerini analiz eden sistem.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli/optik_akis_ve_hareket_takibi" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/banka-project.jpg" alt="Banka Müşteri Kayıt Sistemi">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Banka Müşteri Kayıt Sistemi</h3>
+                            <p class="project-desc">C# ve SQL Server kullanılarak geliştirilen, müşteri kayıt ve takip işlemlerini yöneten banka otomasyon sistemi.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C#</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli/Banka_Musteri_Kayit_Sistemi" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/otomobil-project.jpg" alt="Otomobil Kiralama Sistemi">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Otomobil Kiralama Sistemi</h3>
+                            <p class="project-desc">Araç kiralama işlemlerini yöneten, rezervasyon ve takip süreçlerini otomatize eden sistem.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli/Otomobil_Kiralama_Sistemi_Projesi" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/yuz-algilama-project.jpg" alt="Gerçek Zamanlı Yüz Algılama">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Gerçek Zamanlı Yüz Algılama</h3>
+                            <p class="project-desc">OpenCV kullanılarak geliştirilen, gerçek zamanlı yüz algılama ve analiz sistemi.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli/cv2_gercek_zamanli_yuz_algilama" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/segmentasyon-project.jpg" alt="Görüntü Segmentasyonu">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Görüntü Segmentasyonu</h3>
+                            <p class="project-desc">OpenCV ile geliştirilmiş, görüntüleri anlamlı bölgelere ayıran ve analiz eden sistem.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli/cv2_goruntu_segmentasyonu" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yetenekler Bölümü -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Yetenekler</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">&lt;/&gt;</div>
+                        <h3 class="skill-title">Programlama Dilleri</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">Dart (Flutter)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="images/database-icon.png" alt="Database" class="db-icon">
+                        </div>
+                        <h3 class="skill-title">Veritabanı</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Microsoft SQL Server</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">📱</div>
+                        <h3 class="skill-title">Mobil Geliştirme</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flutter</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h3 class="skill-title">Web Teknolojileri</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">.NET</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">🧠</div>
+                        <h3 class="skill-title">Yapay Zeka</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Seaborn</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Web Scraping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- İletişim Bölümü -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-title">İletişim</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Adınız</label>
+                        <input type="text" id="name" name="from_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz</label>
+                        <input type="email" id="email" name="from_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Mesaj Gönder</span>
+                    </button>
+                </form>
+                <div id="success-message" class="success-message" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mesajınız başarıyla gönderildi!</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">2025 Mustafa Ataklı. Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="https://github.com/mustafaatakli" target="_blank" class="social-link">
+                    <img src="images/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/mustafa-atakli-26592225b/" target="_blank" class="social-link">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="mailto:your.atakliim20@gmail.com" class="social-link">
+                    <img src="images/mail.svg" alt="Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Tema ve dil değişkenleri
+        let currentTheme = 'dark';
+        let currentLang = 'tr';
+
+        // Tema değiştirme fonksiyonu
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.querySelector('.theme-icon');
+            
+            if (body.getAttribute('data-theme') === 'light') {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Sayfa yüklendiğinde tema kontrolü
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const themeIcon = document.querySelector('.theme-icon');
+            
+            if (savedTheme === 'light') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+            }
+        });
+
+        // Dil değiştirme fonksiyonu
+        const translations = {
+            tr: {
+                navLinks: {
+                    home: '👤 Hakkımda',
+                    projects: '💼 Projeler',
+                    skills: '💻 Yetenekler',
+                    contact: '📞 İletişim'
+                },
+                bio: 'Muğla Sıtkı Koçman Üniversitesi Bilişim Sistemleri Mühendisliği 3. sınıf öğrencisiyim ve yazılım alanında kendimi aktif olarak geliştirmeye devam ediyorum. Yapay zeka, makine öğrenmesi ve görüntü işleme alanlarına özel ilgi duyuyor, bu alanlarda projeler geliştirerek yetkinliklerimi artırıyorum. Python programlama dili ve yapay zeka kütüphanelerinde (TensorFlow, Scikit-Learn, OpenCV gibi) yetkinim ve C# diline hakimim. Öğrenmeye açık, azimli ve disiplinli bir yapıya sahibim. Amacım, yenilikçi teknolojilerle problem çözme becerilerimi geliştirerek sektörde değer katan projelerde yer almaktır.',
+                programmingLangs: 'Programlama Dilleri',
+                database: 'Veritabanı',
+                mobileDev: 'Mobil Geliştirme',
+                webTech: 'Web Teknolojileri',
+                ai: 'Yapay Zeka',
+                contactBtn: 'İletişime Geç',
+                downloadBtn: 'CV İndir',
+                projectsTitle: 'Projelerim',
+                skillsTitle: 'Yetenekler',
+                projects: {
+                    aygaz: {
+                        title: 'Aygaz Görüntü İşleme Projesi',
+                        desc: 'Yapay zeka ve görüntü işleme teknolojileri kullanılarak geliştirilen, Aygaz tüplerinin görsel analizini yapan bitirme projesi.'
+                    },
+                    deprem: {
+                        title: 'Deprem Mobil Python Projesi',
+                        desc: 'Python ile geliştirilmiş, gerçek zamanlı deprem verilerini takip eden ve kullanıcılara bildirim sağlayan mobil uygulama.'
+                    },
+                    isletme: {
+                        title: 'İşletme Yönetim Sistemi',
+                        desc: 'İşletmelerin yönetim süreçlerini dijitalleştiren ve optimize eden kapsamlı bir yönetim sistemi.'
+                    },
+                    optik: {
+                        title: 'Optik Akış ve Hareket Takibi',
+                        desc: 'Görüntü işleme teknolojileri kullanılarak geliştirilen, nesne hareketlerini analiz eden sistem.'
+                    },
+                    banka: {
+                        title: 'Banka Müşteri Kayıt Sistemi',
+                        desc: 'C# ve SQL Server kullanılarak geliştirilen, müşteri kayıt ve takip işlemlerini yöneten banka otomasyon sistemi.'
+                    },
+                    otomobil: {
+                        title: 'Otomobil Kiralama Sistemi',
+                        desc: 'Araç kiralama işlemlerini yöneten, rezervasyon ve takip süreçlerini otomatize eden sistem.'
+                    },
+                    yuz: {
+                        title: 'Gerçek Zamanlı Yüz Algılama',
+                        desc: 'OpenCV kullanılarak geliştirilen, gerçek zamanlı yüz algılama ve analiz sistemi.'
+                    },
+                    segmentasyon: {
+                        title: 'Görüntü Segmentasyonu',
+                        desc: 'Derin öğrenme teknikleri kullanılarak geliştirilen görüntü segmentasyonu projesi.'
+                    }
+                },
+                contact: {
+                    title: 'İletişim',
+                    name: 'Adınız',
+                    email: 'E-posta Adresiniz',
+                    message: 'Mesajınız',
+                    send: 'Mesaj Gönder',
+                    copyright: '2025 Mustafa Ataklı. Tüm Hakları Saklıdır.'
+                }
+            },
+            en: {
+                navLinks: {
+                    home: '👤 About Me',
+                    projects: '💼 Projects',
+                    skills: '💻 Skills',
+                    contact: '📞 Contact'
+                },
+                projectsTitle: 'My Projects',
+                skillsTitle: 'Skills',
+                contactBtn: 'Contact Me',
+                downloadBtn: 'Download CV',
+                programmingLangs: 'Programming Languages',
+                database: 'Database',
+                mobileDev: 'Mobile Development',
+                webTech: 'Web Technologies',
+                ai: 'Artificial Intelligence',
+                contact: {
+                    title: 'Contact',
+                    name: 'Your Name',
+                    email: 'Your Email',
+                    message: 'Your Message',
+                    send: 'Send Message',
+                    copyright: '2025 Mustafa Ataklı. All Rights Reserved.'
+                },
+                bio: "I'm a 3rd year Information Systems Engineering student at Muğla Sıtkı Koçman University and I continue to actively develop myself in the field of software. I have a special interest in artificial intelligence, machine learning, and image processing, developing projects in these areas to enhance my competencies. I'm proficient in Python programming language and AI libraries (such as TensorFlow, Scikit-Learn, OpenCV) and have expertise in C#. I have an open-minded, determined, and disciplined personality. My goal is to participate in value-adding projects in the industry by developing my problem-solving skills with innovative technologies.",
+                programmingLangs: 'Programming Languages',
+                database: 'Database',
+                mobileDev: 'Mobile Development',
+                webTech: 'Web Technologies',
+                ai: 'Artificial Intelligence',
+                contactBtn: 'Contact Me',
+                downloadBtn: 'Download CV',
+                projectsTitle: 'My Projects',
+                skillsTitle: 'Skills',
+                projects: {
+                    aygaz: {
+                        title: 'Aygaz Image Processing Project',
+                        desc: 'A graduation project that performs visual analysis of Aygaz cylinders using artificial intelligence and image processing technologies.'
+                    },
+                    deprem: {
+                        title: 'Earthquake Mobile Python Project',
+                        desc: 'A mobile application developed with Python that tracks real-time earthquake data and provides notifications to users.'
+                    },
+                    isletme: {
+                        title: 'Business Management System',
+                        desc: 'A comprehensive management system that digitalizes and optimizes business management processes.'
+                    },
+                    optik: {
+                        title: 'Optical Flow and Motion Tracking',
+                        desc: 'A system developed using image processing technologies to analyze object movements.'
+                    },
+                    banka: {
+                        title: 'Bank Customer Registration System',
+                        desc: 'A bank automation system developed using C# and SQL Server that manages customer registration and tracking processes.'
+                    },
+                    otomobil: {
+                        title: 'Car Rental System',
+                        desc: 'A system that manages car rental operations and automates reservation and tracking processes.'
+                    },
+                    yuz: {
+                        title: 'Real-time Face Detection',
+                        desc: 'A real-time face detection and analysis system developed using OpenCV.'
+                    },
+                    segmentasyon: {
+                        title: 'Image Segmentation',
+                        desc: 'An image segmentation project developed using deep learning techniques.'
+                    }
+                },
+                contact: {
+                    title: 'Contact',
+                    name: 'Your Name',
+                    email: 'Your Email',
+                    message: 'Your Message',
+                    send: 'Send Message',
+                    copyright: '2025 Mustafa Atakli. All Rights Reserved.'
+                }
+            }
+        };
+
+        function toggleLang() {
+            const langBtn = document.getElementById('langToggle');
+            const langText = langBtn.querySelector('.lang-text');
+            const currentLang = langText.textContent;
+            
+            // Dil değiştirme ve localStorage'a kaydetme
+            if (currentLang === 'TR') {
+                langText.textContent = 'EN';
+                localStorage.setItem('lang', 'en');
+                updateContent(translations.en);
+            } else {
+                langText.textContent = 'TR';
+                localStorage.setItem('lang', 'tr');
+                updateContent(translations.tr);
+            }
+        }
+
+        // İçeriği güncelleme fonksiyonu
+        function updateContent(content) {
+            // Menü linklerini güncelle
+            updateNavLinks(content);
+            
+            // Bio
+            if (content.bio) {
+                document.querySelector('.user-bio').textContent = content.bio;
+            }
+            
+            // Proje başlığı
+            if (content.projectsTitle) {
+                document.querySelector('.projects-section .section-title').textContent = content.projectsTitle;
+            }
+            document.querySelector('#skills .section-title').textContent = content.skillsTitle;
+            document.querySelector('#contact .section-title').textContent = content.contact.title;
+            
+            // Projeler
+            const projectItems = document.querySelectorAll('.project-item');
+            projectItems[0].querySelector('.project-title').textContent = content.projects.aygaz.title;
+            projectItems[0].querySelector('.project-desc').textContent = content.projects.aygaz.desc;
+            
+            projectItems[1].querySelector('.project-title').textContent = content.projects.deprem.title;
+            projectItems[1].querySelector('.project-desc').textContent = content.projects.deprem.desc;
+            
+            projectItems[2].querySelector('.project-title').textContent = content.projects.isletme.title;
+            projectItems[2].querySelector('.project-desc').textContent = content.projects.isletme.desc;
+
+            projectItems[3].querySelector('.project-title').textContent = content.projects.optik.title;
+            projectItems[3].querySelector('.project-desc').textContent = content.projects.optik.desc;
+
+            projectItems[4].querySelector('.project-title').textContent = content.projects.banka.title;
+            projectItems[4].querySelector('.project-desc').textContent = content.projects.banka.desc;
+
+            projectItems[5].querySelector('.project-title').textContent = content.projects.otomobil.title;
+            projectItems[5].querySelector('.project-desc').textContent = content.projects.otomobil.desc;
+
+            projectItems[6].querySelector('.project-title').textContent = content.projects.yuz.title;
+            projectItems[6].querySelector('.project-desc').textContent = content.projects.yuz.desc;
+
+            projectItems[7].querySelector('.project-title').textContent = content.projects.segmentasyon.title;
+            projectItems[7].querySelector('.project-desc').textContent = content.projects.segmentasyon.desc;
+            
+            // Yetenekler başlıkları
+            const skillTitles = document.querySelectorAll('.skill-title');
+            skillTitles[0].textContent = content.programmingLangs;
+            skillTitles[1].textContent = content.database;
+            skillTitles[2].textContent = content.mobileDev;
+            skillTitles[3].textContent = content.webTech;
+            skillTitles[4].textContent = content.ai;
+            
+            // İletişim formu
+            document.querySelector('#contact .section-title').textContent = content.contact.title;
+            document.querySelector('label[for="name"]').textContent = content.contact.name;
+            document.querySelector('label[for="email"]').textContent = content.contact.email;
+            document.querySelector('label[for="message"]').textContent = content.contact.message;
+            document.querySelector('.submit-btn span').textContent = content.contact.send;
+
+            // Footer
+            document.querySelector('.copyright').textContent = content.contact.copyright;
+
+            // Buton metinleri
+            document.querySelector('.contact-btn .btn-text').textContent = content.contactBtn;
+            document.querySelector('.download-btn .btn-text').textContent = content.downloadBtn;
+        }
+
+        // Event listeners ve sayfa yüklendiginde dil kontrolü
+        document.addEventListener('DOMContentLoaded', () => {
+            // Varsayılan olarak Türkçe
+            localStorage.setItem('lang', 'tr');
+            
+            const langBtn = document.getElementById('langToggle');
+            const langText = langBtn.querySelector('.lang-text');
+            langText.textContent = 'TR';
+            
+            // Türkçe içeriği yükle
+            updateContent(translations.tr);
+            
+            // Menü linklerini güncelle
+            updateNavLinks(translations.tr);
+        });
+
+        // Menü linklerini güncelleme fonksiyonu
+        function updateNavLinks(content) {
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                const section = link.getAttribute('data-section');
+                if (section && content.navLinks && content.navLinks[section]) {
+                    link.textContent = content.navLinks[section];
+                }
+            });
+        }
+        
+        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+        document.getElementById('langToggle').addEventListener('click', toggleLang);
+
+        // İletişim butonuna tıklandığında yumuşak kaydırma
+        document.querySelector('.contact-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const contactSection = document.querySelector('#contact');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Pencere yüklendiğinde çalışacak kod
+        window.addEventListener('DOMContentLoaded', () => {
+            // Arka plan parçacıkları oluşturma
+            createParticles();
+        });
+
+        // Arka planda rastgele parçacıklar oluşturma
+        function createParticles() {
+            const background = document.querySelector('.background');
+            const particleCount = 100;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                const size = Math.random() * 15 + 3;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                
+                const duration = Math.random() * 8 + 5;
+                particle.style.animationDuration = `${duration}s`;
+                
+                const delay = Math.random() * 5;
+                particle.style.animationDelay = `-${delay}s`;
+                
+                background.appendChild(particle);
+            }
+        }
+        
+        // Logo'ya tıklanabilirlik ve onclick fonksiyonu ekleme
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    // Scroll Progress Bar
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header-container');
+        const scrollProgress = document.querySelector('.scroll-progress');
+        
+        // Header'ın arka planını değiştir
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        // Progress bar'ı güncelle
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.scrollY / windowHeight) * 100;
+        scrollProgress.style.width = `${scrolled}%`;
+    });
+    </script>
+    <script>
+        // CV indirme işlemi için event listener'ı sayfa yüklendiğinde ekle
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadBtn = document.getElementById('downloadCV');
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    
+                    // CV'yi indir
+                    const link = document.createElement('a');
+                    link.href = 'cv/MustafaAtakli_CV.pdf';
+                    link.download = 'MustafaAtakli_CV.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    
+                    // Başarı mesajını göster
+                    const successMessage = document.getElementById('download-success');
+                    successMessage.style.display = 'flex';
+                    setTimeout(() => successMessage.classList.add('show'), 10);
+                    
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                        setTimeout(() => successMessage.style.display = 'none', 300);
+                    }, 3000);
+                });
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('2Lp9nn5q6H_sB-PWh');
+
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                emailjs.sendForm('service_ynt2yai', 'template_mjuuixl', this)
+                    .then(function() {
+                        const successMessage = document.getElementById('success-message');
+                        successMessage.style.display = 'flex';
+                        setTimeout(() => successMessage.classList.add('show'), 10);
+                        
+                        document.getElementById('contact-form').reset();
+                        
+                        setTimeout(() => {
+                            successMessage.classList.remove('show');
+                            setTimeout(() => successMessage.style.display = 'none', 300);
+                        }, 3000);
+                    }, function(error) {
+                        console.log('Error:', error);
+                        alert('Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.');
+                    });
+            });
+        })();
+    </script>
+</body>
+</html>
