@@ -213,13 +213,28 @@
                             <img src="images/segmentasyon-project.jpg" alt="Görüntü Segmentasyonu">
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">Görüntü Segmentasyonu</h3>
-                            <p class="project-desc">OpenCV ile geliştirilmiş, görüntüleri anlamlı bölgelere ayıran ve analiz eden sistem.</p>
+                            <h3 class="project-title">Görüntü İşleme Masaüstü Uygulaması</h3>
+                            <p class="project-desc">Bu proje, Python, OpenCV ve Tkinter kullanılarak geliştirilmiş kapsamlı bir görüntü işleme masaüstü uygulamasıdır. Temel görüntü işleme işlemlerinden gelişmiş filtreleme ve segmentasyona kadar birçok özelliği kullanıcı dostu bir arayüzle sunar.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/mustafaatakli/cv2_goruntu_segmentasyonu" class="project-link code-link">GitHub</a>
+                                <a href="https://github.com/mustafaatakli/Goruntu-Isleme-Uygulamasi" class="project-link code-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="images/Resim1.jpg" alt="Yüz Tanıma Tabanlı Öğrenci Takip Sistemi">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Yüz Tanıma Tabanlı Öğrenci Takip Sistemi</h3>
+                            <p class="project-desc">Python ile geliştirdiğim bu projede yüz tanıma ve duygu analizi yaparak MSSQL veritabanı ve FastAPI ile entegre ettim; Tkinter arayüzüyle kullanıcı dostu tasarım sunup, Docker/Nginx ile dağıtımını gerçekleştirdim. </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/mustafaatakli" class="project-link code-link">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -422,8 +437,12 @@
                         desc: 'OpenCV kullanılarak geliştirilen, gerçek zamanlı yüz algılama ve analiz sistemi.'
                     },
                     segmentasyon: {
-                        title: 'Görüntü Segmentasyonu',
-                        desc: 'Derin öğrenme teknikleri kullanılarak geliştirilen görüntü segmentasyonu projesi.'
+                        title: 'Görüntü İşleme Masaüstü Uygulaması',
+                        desc: 'Bu proje, Python, OpenCV ve Tkinter kullanılarak geliştirilmiş kapsamlı bir görüntü işleme masaüstü uygulamasıdır. Temel görüntü işleme işlemlerinden gelişmiş filtreleme ve segmentasyona kadar birçok özelliği kullanıcı dostu bir arayüzle sunar.'
+                    },
+                    yuztanima: {
+                        title: 'Yüz Tanıma Tabanlı Öğrenci Takip Sistemi',
+                        desc: 'Python ile geliştirdiğim bu projede yüz tanıma ve duygu analizi yaparak MSSQL veritabanı ve FastAPI ile entegre ettim; Tkinter arayüzüyle kullanıcı dostu tasarım sunup, Docker/Nginx ile dağıtımını gerçekleştirdim.'
                     }
                 },
                 contact: {
@@ -499,8 +518,12 @@
                         desc: 'A real-time face detection and analysis system developed using OpenCV.'
                     },
                     segmentasyon: {
-                        title: 'Image Segmentation',
-                        desc: 'An image segmentation project developed using deep learning techniques.'
+                        title: 'Image Processing Desktop Application',
+                        desc: 'This project is a comprehensive image processing desktop application developed using Python, OpenCV, and Tkinter. It offers a wide range of features, from basic image processing to advanced filtering and segmentation, all within a user-friendly interface.'
+                    },
+                    yuztanima: {
+                        title: 'Facial Recognition-Based Student Tracking System',
+                        desc: 'In this project, which I developed with Python, I performed facial recognition and emotion analysis and integrated it with the MSSQL database and FastAPI; I presented a user-friendly design with the Tkinter interface and distributed it with Docker/Nginx.'
                     }
                 },
                 contact: {
@@ -573,6 +596,9 @@
 
             projectItems[7].querySelector('.project-title').textContent = content.projects.segmentasyon.title;
             projectItems[7].querySelector('.project-desc').textContent = content.projects.segmentasyon.desc;
+
+            projectItems[8].querySelector('.project-title').textContent = content.projects.yuztanima.title;
+            projectItems[8].querySelector('.project-desc').textContent = content.projects.yuztanima.desc;
             
             // Yetenekler başlıkları
             const skillTitles = document.querySelectorAll('.skill-title');
