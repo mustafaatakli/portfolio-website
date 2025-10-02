@@ -47,7 +47,7 @@ body {
 /* Mobil cihazlar için body padding ayarı */
 @media (max-width: 768px) {
     body {
-        padding-top: 60px;
+        padding-top: 70px;
     }
 }
 
@@ -229,6 +229,16 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+/* Mobil cihazlarda kontrol butonları için özel ayarlar */
+@media (max-width: 768px) {
+    .control-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 15px;
+        border-width: 2px;
+    }
+}
+
 .control-btn:hover {
     background-color: var(--accent);
     color: var(--terminal);
@@ -238,10 +248,10 @@ a:hover {
 /* Mobil Menü */
 @media (max-width: 768px) {
     .header-container {
-        padding: 10px 20px;
+        padding: 12px 20px;
         flex-direction: row;
-        gap: 15px;
-        height: 60px;
+        gap: 18px;
+        height: 65px;
         background-color: var(--terminal);
         backdrop-filter: blur(10px);
     }
@@ -280,8 +290,8 @@ a:hover {
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .header-container {
-        padding: 0 10px;
-        height: 50px;
+        padding: 0 15px;
+        height: 65px;
         position: fixed;
         top: 0;
         left: 0;
@@ -298,13 +308,15 @@ a:hover {
 
 
     .logo {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 700;
         margin: 0;
         padding: 0;
         position: absolute;
-        left: 10px;
+        left: 15px;
         top: 50%;
         transform: translateY(-50%);
+        letter-spacing: 0.5px;
     }
 
 
@@ -323,11 +335,11 @@ a:hover {
 
     .theme-lang-controls {
         display: flex;
-        gap: 10px;
+        gap: 12px;
         margin: 0;
         padding: 0;
         position: absolute;
-        right: 10px;
+        right: 15px;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -414,15 +426,32 @@ a:hover {
 
 /* Küçük Mobil Cihazlar */
 @media (max-width: 480px) {
+    body {
+        padding-top: 65px;
+    }
+
     .container {
         padding: 0 10px;
     }
 
     .header-container {
-        padding: 10px;
+        padding: 0 12px;
+        height: 60px;
     }
 
     .logo {
+        font-size: 18px;
+        left: 12px;
+    }
+
+    .theme-lang-controls {
+        right: 12px;
+        gap: 10px;
+    }
+
+    .control-btn {
+        width: 38px;
+        height: 38px;
         font-size: 14px;
     }
 
@@ -503,6 +532,15 @@ main {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: slideInUp 0.8s;
+}
+
+/* Mobil cihazlarda terminal arka planını şeffaflaştır */
+@media (max-width: 768px) {
+    .terminal {
+        background-color: rgba(20, 22, 37, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(96, 253, 203, 0.1);
+    }
 }
 
 .terminal:hover {
@@ -806,19 +844,25 @@ main {
     }
 
     .user-image {
-        width: 350px;
-        height: 350px;
-        margin: 0 auto 20px auto;
+        width: 320px;
+        height: 320px;
+        margin: 0 auto 25px auto;
         position: relative;
         top: 0;
         right: 0;
         z-index: 2;
         border-radius: 50%;
-        border: 3px solid var(--accent);
+        border: 4px solid var(--accent);
         display: block;
         order: -1;
         overflow: hidden;
-        max-width: 85vw;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        aspect-ratio: 1 / 1;
+        min-width: 320px;
+        max-width: 320px;
+        min-height: 320px;
+        max-height: 320px;
     }
 
     .user-image img {
@@ -826,6 +870,9 @@ main {
         height: 100%;
         object-fit: cover;
         object-position: center;
+        border-radius: 50%;
+        display: block;
+        aspect-ratio: 1 / 1;
     }
 
     .user-text {
@@ -844,7 +891,7 @@ main {
     }
 
     .user-bio {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.6;
         text-align: center;
         margin-bottom: 20px;
@@ -871,8 +918,14 @@ main {
     .user-image {
         width: 280px;
         height: 280px;
-        margin: 0 auto 15px auto;
-        max-width: 75vw;
+        margin: 0 auto 20px auto;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        aspect-ratio: 1 / 1;
+        min-width: 280px;
+        max-width: 280px;
+        min-height: 280px;
+        max-height: 280px;
     }
 
     .user-text {
@@ -886,7 +939,7 @@ main {
     }
 
     .user-bio {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 1.5;
     }
 
@@ -987,6 +1040,15 @@ main {
     min-height: 500px;
     display: flex;
     flex-direction: column;
+}
+
+/* Mobil cihazlarda proje kartlarının arka planını şeffaflaştır */
+@media (max-width: 768px) {
+    .project-item {
+        background-color: rgba(20, 22, 37, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(96, 253, 203, 0.1);
+    }
 }
 
 .project-item::before {
@@ -1142,6 +1204,15 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Mobil cihazlarda iletişim formunun arka planını şeffaflaştır */
+@media (max-width: 768px) {
+    .contact-form {
+        background-color: rgba(20, 22, 37, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(96, 253, 203, 0.1);
+    }
+}
+
 .success-message {
     width: 100%;
     margin-top: 20px;
@@ -1255,6 +1326,15 @@ main {
     overflow: hidden;
 }
 
+/* Mobil cihazlarda skill kartlarının arka planını şeffaflaştır */
+@media (max-width: 768px) {
+    .skill-card {
+        background-color: rgba(20, 22, 37, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(96, 253, 203, 0.1);
+    }
+}
+
 .skill-card::before {
     content: '';
     position: absolute;
@@ -1366,6 +1446,15 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
     animation: slideInUp 0.8s;
     margin-bottom: 40px;
+}
+
+/* Mobil cihazlarda terminal kullanıcı bölümünün arka planını şeffaflaştır */
+@media (max-width: 768px) {
+    .terminal-user {
+        background-color: rgba(20, 22, 37, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(96, 253, 203, 0.1);
+    }
 }
 
 .terminal-user:hover {
@@ -1543,6 +1632,15 @@ main {
     background-color: var(--terminal);
     padding: 20px 0;
     margin-top: 50px;
+}
+
+/* Mobil cihazlarda footer'ın arka planını şeffaflaştır */
+@media (max-width: 768px) {
+    .footer {
+        background-color: rgba(20, 22, 37, 0.7);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(96, 253, 203, 0.1);
+    }
 }
 
 .footer-content {
