@@ -537,7 +537,7 @@ main {
 /* Mobil cihazlarda terminal arka planını şeffaflaştır */
 @media (max-width: 768px) {
     .terminal {
-        background-color: rgba(20, 22, 37, 0.7);
+        background-color: rgba(20, 22, 37, 0.35);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(96, 253, 203, 0.1);
     }
@@ -1045,7 +1045,7 @@ main {
 /* Mobil cihazlarda proje kartlarının arka planını şeffaflaştır */
 @media (max-width: 768px) {
     .project-item {
-        background-color: rgba(20, 22, 37, 0.7);
+        background-color: rgba(20, 22, 37, 0.35);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(96, 253, 203, 0.1);
     }
@@ -1207,7 +1207,7 @@ main {
 /* Mobil cihazlarda iletişim formunun arka planını şeffaflaştır */
 @media (max-width: 768px) {
     .contact-form {
-        background-color: rgba(20, 22, 37, 0.7);
+        background-color: rgba(20, 22, 37, 0.35);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(96, 253, 203, 0.1);
     }
@@ -1329,7 +1329,7 @@ main {
 /* Mobil cihazlarda skill kartlarının arka planını şeffaflaştır */
 @media (max-width: 768px) {
     .skill-card {
-        background-color: rgba(20, 22, 37, 0.7);
+        background-color: rgba(20, 22, 37, 0.35);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(96, 253, 203, 0.1);
     }
@@ -1451,7 +1451,7 @@ main {
 /* Mobil cihazlarda terminal kullanıcı bölümünün arka planını şeffaflaştır */
 @media (max-width: 768px) {
     .terminal-user {
-        background-color: rgba(20, 22, 37, 0.7);
+        background-color: rgba(20, 22, 37, 0.35);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(96, 253, 203, 0.1);
     }
@@ -1637,7 +1637,7 @@ main {
 /* Mobil cihazlarda footer'ın arka planını şeffaflaştır */
 @media (max-width: 768px) {
     .footer {
-        background-color: rgba(20, 22, 37, 0.7);
+        background-color: rgba(20, 22, 37, 0.35);
         backdrop-filter: blur(10px);
         border-top: 1px solid rgba(96, 253, 203, 0.1);
     }
