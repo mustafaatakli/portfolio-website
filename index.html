@@ -10,12 +10,12 @@
 
 </head>
 <body>
-    <!-- Animasyonlu Arka Plan -->
+    
     <div class="background">
         <div class="grid"></div>
     </div>
 
-    <!-- Header -->
+    
     <header id="header">
         <div class="header-container">
             <div class="logo" style="cursor: pointer;" onclick="scrollToTop()">MUSTAFA ATAKLI</div>
@@ -43,7 +43,7 @@
     </header>
 
     <main>
-        <!-- Terminal Bölümü -->
+        
         <section id="home" class="terminal-section">
             <div class="container">
                 <div class="terminal">
@@ -97,7 +97,7 @@
             </div>
         </section>
 
-        <!-- Projeler Bölümü -->
+        
         <section id="projects" class="projects-section section">
             <div class="container">
                 <h2 class="section-title">Projelerim</h2>
@@ -242,7 +242,7 @@
             </div>
         </section>
 
-        <!-- Yetenekler Bölümü -->
+       
         <section id="skills" class="skills-section">
             <div class="container">
                 <h2 class="section-title">Yetenekler</h2>
@@ -303,7 +303,7 @@
             </div>
         </section>
 
-        <!-- İletişim Bölümü -->
+        
         <section id="contact" class="contact-section section">
             <div class="container">
                 <h2 class="section-title">İletişim</h2>
@@ -353,11 +353,11 @@
 
     <!-- JavaScript -->
     <script>
-        // Tema ve dil değişkenleri
+        
         let currentTheme = 'dark';
         let currentLang = 'tr';
 
-        // Tema değiştirme fonksiyonu
+        
         function toggleTheme() {
             const body = document.body;
             const themeIcon = document.querySelector('.theme-icon');
@@ -373,7 +373,7 @@
             }
         }
 
-        // Sayfa yüklendiğinde tema kontrolü
+        
         document.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('theme');
             const body = document.body;
@@ -388,7 +388,7 @@
             }
         });
 
-        // Dil değiştirme fonksiyonu
+        
         const translations = {
             tr: {
                 navLinks: {
@@ -542,7 +542,7 @@
             const langText = langBtn.querySelector('.lang-text');
             const currentLang = langText.textContent;
             
-            // Dil değiştirme ve localStorage'a kaydetme
+            
             if (currentLang === 'TR') {
                 langText.textContent = 'EN';
                 localStorage.setItem('lang', 'en');
@@ -554,24 +554,24 @@
             }
         }
 
-        // İçeriği güncelleme fonksiyonu
+        
         function updateContent(content) {
-            // Menü linklerini güncelle
+           
             updateNavLinks(content);
             
-            // Bio
+            
             if (content.bio) {
                 document.querySelector('.user-bio').textContent = content.bio;
             }
             
-            // Proje başlığı
+            
             if (content.projectsTitle) {
                 document.querySelector('.projects-section .section-title').textContent = content.projectsTitle;
             }
             document.querySelector('#skills .section-title').textContent = content.skillsTitle;
             document.querySelector('#contact .section-title').textContent = content.contact.title;
             
-            // Projeler
+            
             const projectItems = document.querySelectorAll('.project-item');
             projectItems[0].querySelector('.project-title').textContent = content.projects.aygaz.title;
             projectItems[0].querySelector('.project-desc').textContent = content.projects.aygaz.desc;
@@ -600,7 +600,7 @@
             projectItems[8].querySelector('.project-title').textContent = content.projects.yuztanima.title;
             projectItems[8].querySelector('.project-desc').textContent = content.projects.yuztanima.desc;
             
-            // Yetenekler başlıkları
+            
             const skillTitles = document.querySelectorAll('.skill-title');
             skillTitles[0].textContent = content.programmingLangs;
             skillTitles[1].textContent = content.database;
@@ -608,7 +608,7 @@
             skillTitles[3].textContent = content.webTech;
             skillTitles[4].textContent = content.ai;
             
-            // İletişim formu
+            
             document.querySelector('#contact .section-title').textContent = content.contact.title;
             document.querySelector('label[for="name"]').textContent = content.contact.name;
             document.querySelector('label[for="email"]').textContent = content.contact.email;
@@ -618,28 +618,28 @@
             // Footer
             document.querySelector('.copyright').textContent = content.contact.copyright;
 
-            // Buton metinleri
+            
             document.querySelector('.contact-btn .btn-text').textContent = content.contactBtn;
             document.querySelector('.download-btn .btn-text').textContent = content.downloadBtn;
         }
 
-        // Event listeners ve sayfa yüklendiginde dil kontrolü
+        
         document.addEventListener('DOMContentLoaded', () => {
-            // Varsayılan olarak Türkçe
+            
             localStorage.setItem('lang', 'tr');
             
             const langBtn = document.getElementById('langToggle');
             const langText = langBtn.querySelector('.lang-text');
             langText.textContent = 'TR';
             
-            // Türkçe içeriği yükle
+            
             updateContent(translations.tr);
             
-            // Menü linklerini güncelle
+            
             updateNavLinks(translations.tr);
         });
 
-        // Menü linklerini güncelleme fonksiyonu
+       
         function updateNavLinks(content) {
             document.querySelectorAll('.nav-links a').forEach(link => {
                 const section = link.getAttribute('data-section');
@@ -652,20 +652,20 @@
         document.getElementById('themeToggle').addEventListener('click', toggleTheme);
         document.getElementById('langToggle').addEventListener('click', toggleLang);
 
-        // İletişim butonuna tıklandığında yumuşak kaydırma
+        
         document.querySelector('.contact-btn').addEventListener('click', function(e) {
             e.preventDefault();
             const contactSection = document.querySelector('#contact');
             contactSection.scrollIntoView({ behavior: 'smooth' });
         });
 
-        // Pencere yüklendiğinde çalışacak kod
+       
         window.addEventListener('DOMContentLoaded', () => {
-            // Arka plan parçacıkları oluşturma
+            
             createParticles();
         });
 
-        // Arka planda rastgele parçacıklar oluşturma
+        
         function createParticles() {
             const background = document.querySelector('.background');
             const particleCount = 100;
@@ -693,37 +693,37 @@
             }
         }
         
-        // Logo'ya tıklanabilirlik ve onclick fonksiyonu ekleme
+        
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    // Scroll Progress Bar
+   
     window.addEventListener('scroll', () => {
         const header = document.querySelector('.header-container');
         const scrollProgress = document.querySelector('.scroll-progress');
         
-        // Header'ın arka planını değiştir
+        
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
         
-        // Progress bar'ı güncelle
+        
         const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (window.scrollY / windowHeight) * 100;
         scrollProgress.style.width = `${scrolled}%`;
     });
     </script>
     <script>
-        // CV indirme işlemi için event listener'ı sayfa yüklendiğinde ekle
+        
         document.addEventListener('DOMContentLoaded', function() {
             const downloadBtn = document.getElementById('downloadCV');
             if (downloadBtn) {
                 downloadBtn.addEventListener('click', function(event) {
                     event.preventDefault();
                     
-                    // CV'yi indir
+                    
                     const link = document.createElement('a');
                     link.href = 'cv/MustafaAtakli_CV.pdf';
                     link.download = 'MustafaAtakli_CV.pdf';
@@ -731,7 +731,7 @@
                     link.click();
                     document.body.removeChild(link);
                     
-                    // Başarı mesajını göster
+                    
                     const successMessage = document.getElementById('download-success');
                     successMessage.style.display = 'flex';
                     setTimeout(() => successMessage.classList.add('show'), 10);
