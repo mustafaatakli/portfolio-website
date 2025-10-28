@@ -88,7 +88,7 @@ Bu proje kişisel kullanım içindir. Kullanmak isterseniz lütfen uygun şekild
 
 - **GitHub**: [@mustafaatakli](https://github.com/mustafaatakli)
 - **LinkedIn**: [Mustafa Ataklı](https://www.linkedin.com/in/mustafa-atakli-26592225b/)
-- **Portfolyo**: [Mustafa Ataklı](https://www.mustafaatakli.dev)
+- **Portfolyo**: [mustafaatakli.dev](https://www.mustafaatakli.dev)
 - **E-posta**: atakliim20@gmail.com
 
 ---
