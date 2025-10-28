@@ -1,7 +1,5 @@
-/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
 
-/* Temel Stiller */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +7,7 @@
 }
 
 :root {
-    /* Koyu Tema (Varsayılan) */
+    
     --background: #0a0b12;
     --terminal: #141625;
     --text: #fffffe;
@@ -21,7 +19,7 @@
     --grid-color: rgba(24, 28, 48, 0.1);
 }
 
-/* Aydınlık Tema */
+
 [data-theme="light"] {
     --background: #f8f9fa;
     --terminal: #ffffff;
@@ -44,14 +42,14 @@ body {
     padding-top: 80px;
 }
 
-/* Mobil cihazlar için body padding ayarı */
+
 @media (max-width: 768px) {
     body {
         padding-top: 70px;
     }
 }
 
-/* Ana Arka Plan */
+
 .background {
     position: fixed;
     top: 0;
@@ -229,7 +227,7 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-/* Mobil cihazlarda kontrol butonları için özel ayarlar */
+
 @media (max-width: 768px) {
     .control-btn {
         width: 42px;
@@ -245,7 +243,7 @@ a:hover {
     transform: translateY(-2px);
 }
 
-/* Mobil Menü */
+
 @media (max-width: 768px) {
     .header-container {
         padding: 12px 20px;
@@ -271,7 +269,7 @@ a:hover {
     }
 }
 
-/* Mobil Menü */
+
 .menu-toggle {
     display: none;
     background: none;
@@ -287,7 +285,7 @@ a:hover {
     color: var(--accent);
 }
 
-/* Mobil Uyumluluk */
+
 @media (max-width: 768px) {
     .header-container {
         padding: 0 15px;
@@ -344,9 +342,7 @@ a:hover {
         transform: translateY(-50%);
     }
 
-    /* Terminal Bölümü için özel düzenleme kaldırıldı */
-
-    /* Projeler Bölümü */
+    
     .project-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -373,7 +369,7 @@ a:hover {
         font-size: 14px;
     }
 
-    /* Yetenekler Bölümü */
+    
     .skills-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -394,7 +390,7 @@ a:hover {
         margin: 5px;
     }
 
-    /* İletişim Formu */
+    
     .contact-form {
         padding: 20px;
     }
@@ -424,7 +420,7 @@ a:hover {
     }
 }
 
-/* Küçük Mobil Cihazlar */
+
 @media (max-width: 480px) {
     body {
         padding-top: 65px;
@@ -496,27 +492,27 @@ a:hover {
     }
 }
 
-/* Ana İçerik */
+
 main {
     padding-top: 100px;
     padding-bottom: 50px;
     min-height: 100vh;
 }
 
-/* Mobil cihazlar için main padding ayarı */
+
 @media (max-width: 768px) {
     main {
         padding-top: 20px;
     }
 }
 
-/* Terminal Bölümü */
+
 .terminal-section {
     padding: 40px 0;
     animation: fadeIn 1s ease-out;
 }
 
-/* Mobil cihazlar için terminal bölüm padding ayarı */
+
 @media (max-width: 768px) {
     .terminal-section {
         padding: 10px 0 20px 0;
@@ -534,7 +530,7 @@ main {
     animation: slideInUp 0.8s;
 }
 
-/* Mobil cihazlarda terminal arka planını şeffaflaştır */
+
 @media (max-width: 768px) {
     .terminal {
         background-color: rgba(20, 22, 37, 0.35);
@@ -597,7 +593,7 @@ main {
     line-height: 1.6;
 }
 
-/* Masaüstü görünümde terminal content hizalaması */
+
 @media (min-width: 769px) {
     .terminal-content {
         text-align: left;
@@ -608,7 +604,7 @@ main {
     padding: 10px;
 }
 
-/* Mobil cihazlarda user-profile düzenlemesi */
+
 @media (max-width: 768px) {
     .user-profile {
         padding: 20px 15px;
@@ -627,7 +623,7 @@ main {
     align-items: flex-start;
 }
 
-/* Masaüstü görünümde user-info hizalaması */
+
 @media (min-width: 769px) {
     .user-info {
         align-items: flex-start;
@@ -639,7 +635,7 @@ main {
     flex: 1;
 }
 
-/* Masaüstü görünümde terminal metinlerinin hizalaması */
+
 @media (min-width: 769px) {
     .user-text {
         display: flex;
@@ -687,7 +683,7 @@ main {
         margin-left: 0;
     }
     
-    /* Terminal komutlarının açıklama ile hizalanması */
+    
     .command-line,
     .terminal-prompt {
         padding-left: 0;
@@ -703,7 +699,7 @@ main {
         flex-grow: 1;
     }
     
-    /* User name ve bio ile aynı başlangıç noktası */
+   
     .user-name,
     .user-bio,
     .command-line,
@@ -760,7 +756,7 @@ main {
     text-align: left;
 }
 
-/* Masaüstü görünümde command-line hizalaması */
+
 @media (min-width: 769px) {
     .command-line {
         margin: 0 0 15px 0;
@@ -785,7 +781,7 @@ main {
     opacity: 0.9;
 }
 
-/* Masaüstü görünümde response padding ayarı */
+
 @media (min-width: 769px) {
     .response {
         padding: 0;
@@ -793,7 +789,7 @@ main {
     }
 }
 
-/* Mobil görünümde response düzenlemesi */
+
 @media (max-width: 768px) {
     .response {
         padding: 0 10px;
@@ -816,7 +812,7 @@ main {
     text-align: left;
 }
 
-/* Masaüstü görünümde terminal-prompt hizalaması */
+
 @media (min-width: 769px) {
     .terminal-prompt {
         margin: 20px 0 0 0;
@@ -900,7 +896,7 @@ main {
         margin-right: auto;
     }
 
-    /* Mobil görünümde command line'ları ve terminal prompt'u gizle */
+    
     .command-line {
         display: none;
     }
@@ -964,7 +960,7 @@ main {
     }
 }
 
-/* Bölüm Başlıkları */
+
 .section-title {
     font-size: 2.5em;
     color: var(--text);
@@ -1008,12 +1004,12 @@ main {
     opacity: 1;
 }
 
-/* Başlıkların container'ını ortalamak için */
+
 .skills-section .container {
     padding: 0 20px;
 }
 
-/* Projeler Bölümü */
+
 .projects-section {
     padding: 80px 0;
     animation: fadeIn 1s ease-out;
@@ -1042,7 +1038,7 @@ main {
     flex-direction: column;
 }
 
-/* Mobil cihazlarda proje kartlarının arka planını şeffaflaştır */
+
 @media (max-width: 768px) {
     .project-item {
         background-color: rgba(20, 22, 37, 0.35);
@@ -1183,7 +1179,7 @@ main {
     transform: translateY(-3px);
 }
 
-/* İletişim Bölümü */
+
 .contact-section {
     padding: 80px 0;
     animation: fadeIn 1s ease-out;
@@ -1204,7 +1200,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobil cihazlarda iletişim formunun arka planını şeffaflaştır */
+
 @media (max-width: 768px) {
     .contact-form {
         background-color: rgba(20, 22, 37, 0.35);
@@ -1295,7 +1291,7 @@ main {
     font-family: var(--font-mono);
 }
 
-/* Yetenekler Bölümü */
+
 .skills-section {
     padding: 80px 0;
     animation: fadeIn 1s ease-out;
@@ -1326,7 +1322,7 @@ main {
     overflow: hidden;
 }
 
-/* Mobil cihazlarda skill kartlarının arka planını şeffaflaştır */
+
 @media (max-width: 768px) {
     .skill-card {
         background-color: rgba(20, 22, 37, 0.35);
@@ -1430,7 +1426,7 @@ main {
     }
 }
 
-/* Terminal Kullanıcı Bölümü */
+
 .terminal-user-section {
     padding: 40px 0;
     animation: fadeIn 1s ease-out;
@@ -1448,7 +1444,7 @@ main {
     margin-bottom: 40px;
 }
 
-/* Mobil cihazlarda terminal kullanıcı bölümünün arka planını şeffaflaştır */
+
 @media (max-width: 768px) {
     .terminal-user {
         background-color: rgba(20, 22, 37, 0.35);
@@ -1540,14 +1536,14 @@ main {
     }
 }
 
-/* Profil Butonları */
+
 .profile-actions {
     display: flex;
     gap: 15px;
     margin-top: 25px;
 }
 
-/* Mobil cihazlarda profil butonları düzenlemesi */
+
 @media (max-width: 768px) {
     .profile-actions {
         flex-direction: column;
@@ -1634,7 +1630,7 @@ main {
     margin-top: 50px;
 }
 
-/* Mobil cihazlarda footer'ın arka planını şeffaflaştır */
+
 @media (max-width: 768px) {
     .footer {
         background-color: rgba(20, 22, 37, 0.35);
@@ -1681,7 +1677,7 @@ main {
     transform: translateY(-3px);
 }
 
-/* Animasyonlar */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1724,7 +1720,7 @@ main {
     }
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -1770,17 +1766,17 @@ main {
     }
 }
 
-/* Terminal ve İçerik Geçişleri */
+
 .terminal, .skill-card, .project-item {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Buton ve Link Geçişleri */
+
 .action-btn, .nav-links a, .project-link {
     transition: all 0.3s ease;
 }
 
-/* Tema Değiştirme Butonu */
+
 .theme-icon {
     transition: transform 0.3s ease;
 }
