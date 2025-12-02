@@ -104,14 +104,12 @@ Bu proje kişisel kullanım içindir. Kullanmak isterseniz lütfen uygun şekild
 
 ### 📸 Ekran Görüntüleri
 
-<img src="https://github.com/mustafaatakli/ParcaMuhendisi-AutoPartsSystem/blob/main/photos/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-11-04%20151007.png" width="auto">
+<img src="https://github.com/mustafaatakli/portfolio-website/blob/main/images/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-12-02%20224307.png" width="auto">
 
 ---
 
-<img src="https://github.com/mustafaatakli/ParcaMuhendisi-AutoPartsSystem/blob/main/photos/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-11-03%20140640.png" width="auto">
+<img src="https://github.com/mustafaatakli/portfolio-website/blob/main/images/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-12-02%20224338.png" width="auto">
 
 ---
-
-<img src="https://github.com/mustafaatakli/ParcaMuhendisi-AutoPartsSystem/blob/main/photos/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-11-03%20140742.png" width="auto">
 
 2025 Mustafa Ataklı. Tüm Hakları Saklıdır.
