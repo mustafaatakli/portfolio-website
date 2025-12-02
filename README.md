@@ -45,6 +45,15 @@ Modern ve minimal tasarıma sahip, terminal temalı kişisel portföy web sitesi
   - Matplotlib, Seaborn
   - Scikit-learn
   - Web Scraping
+    
+## 🤖 Yeni Güncelleme: Yapay Zeka Destekli Kişisel Asistan
+
+Web sitemin bu yeni versiyonunda, ziyaretçilerin benim hakkımda daha hızlı ve doğal bir şekilde bilgi alabilmesi için **AI tabanlı bir Chatbot** entegre ettim.
+
+**Bu özellik ne sağlar?**
+* 🙋‍♂️ **İnteraktif Deneyim:** Statik metinleri okumak yerine, benimle ilgili merak ettiğiniz (eğitim, projeler, yetenekler vb.) soruları doğrudan sorabilirsiniz.
+* ⚡ **Anlık Cevaplar:** "Hangi teknolojileri kullanıyorsun?" veya "Son projen nedir?" gibi sorulara saniyeler içinde yanıt alabilirsiniz.
+* 🧠 **Akıllı Etkileşim:** Klasik bir portfolyo gezintisinin ötesinde, sohbet tabanlı modern bir kullanıcı deneyimi sunar.
 
 ## Dosya Yapısı
 
@@ -92,5 +101,17 @@ Bu proje kişisel kullanım içindir. Kullanmak isterseniz lütfen uygun şekild
 - **E-posta**: atakliim20@gmail.com
 
 ---
+
+### 📸 Ekran Görüntüleri
+
+<img src="https://github.com/mustafaatakli/ParcaMuhendisi-AutoPartsSystem/blob/main/photos/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-11-04%20151007.png" width="auto">
+
+---
+
+<img src="https://github.com/mustafaatakli/ParcaMuhendisi-AutoPartsSystem/blob/main/photos/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-11-03%20140640.png" width="auto">
+
+---
+
+<img src="https://github.com/mustafaatakli/ParcaMuhendisi-AutoPartsSystem/blob/main/photos/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-11-03%20140742.png" width="auto">
 
 2025 Mustafa Ataklı. Tüm Hakları Saklıdır.
