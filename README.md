@@ -1,7 +1,7 @@
 # My Portfolio Website - Mustafa Ataklı
 
 Modern ve minimal tasarıma sahip, terminal temalı kişisel portföy web sitesi. Bu proje, AI, veri analizi ve görüntü işleme ve diğer alanlardaki çalışmalarımı ve projelerimi sergilemek için geliştirilmiştir.
-
+[![Web Sitemi Ziyaret Et](https://img.shields.io/badge/Portfolyomu_Ziyaret_Et-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.mustafaatakli.dev)
 ## Özellikler
 
 - **Terminal Temalı Tasarım**: Geliştiricilere özgü, terminal görünümünde modern ve minimalist arayüz
